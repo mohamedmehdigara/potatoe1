@@ -25,6 +25,18 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <script>
+      $(document).ready(function (){
+          if(navigator.userAgent.toLowerCase().indexOf("android") > -1){
+              window.location.href = 'https://play.google.com/store/apps/details?id=com.tetraz.capsigo';
+          }
+          else if(navigator.userAgent.toLowerCase().indexOf("iphone") > -1){
+              window.location.href = 'https://apps.apple.com/app/capsigo/id1547746310';
+          }else {
+              window.location.href = 'https://capsigo.com';
+          }
+      });
+  </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
